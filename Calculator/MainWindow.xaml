@@ -5,13 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="299" Width="272">
-    <Grid>
+        Title="MainWindow" Height="395" Width="355">
+    <Grid Background="#FF322B51" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="183*"/>
             <RowDefinition Height="251*"/>
         </Grid.RowDefinitions>
-        <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="18"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" Height="29" TextAlignment="Center"/>
+        <Button Content="7" Margin="10,55,270,55" Click="Button7_Click"/>
+        <Button Content="8" Margin="90,55,189,55" Click="Button8_Click"/>
+        <Button Content="9" Margin="173,55,104,55" Click="Button9_Click"/>
+        <Button Content="C" Margin="255,55,28,55"  Background="#FFF74848" Click="ButtonC_Click"/>
+        <Button Content="4" Margin="10,112,270,217" Grid.RowSpan="2" Click="Button4_Click"/>
+        <Button Content="5" Margin="90,112,188,217" Click="Button5_Click" Grid.RowSpan="2"/>
+        <Button Content="6" Margin="172,112,105,217" Click="Button6_Click" Grid.RowSpan="2"/>
+        <Button Content="/" Margin="255,112,28,217" Click="ButtonDiv_Click" Grid.RowSpan="2"/>
+        <Button Content="1" Margin="10,10,270,157" Grid.Row="1" Click="Button1_Click"/>
+        <Button Content="2" Margin="90,10,188,157" Grid.Row="1" Click="Button2_Click"/>
+        <Button Content="3" Margin="172,10,105,157" Grid.Row="1" Click="Button3_Click"/>
+        <Button Content="*" Margin="255,71,28,102" Grid.Row="1" Click="ButtonX_Click"/>
+        <Button Content="00" Margin="10,71,270,102" Grid.Row="1" Click="Button00_Click"/>
+        <Button Content="0" Margin="90,71,188,102" Grid.Row="1" Click="Button0_Click"/>
+        <Button Content="." Margin="172,71,105,102" Grid.Row="1" Click="ButtonPer_Click"/>
+        <Button Content="+" Margin="255,10,28,157" Grid.Row="1" Click="ButtonPlus_Click"/>
+        <Button Content="=" Margin="10,123,105,51" Grid.Row="1" Background="#FF84D137" Click="ButtonEqu_Click"/>
+        <Button Content="-" Margin="255,123,28,50" Grid.Row="1" Click="ButtonMin_Click"/>
 
     </Grid>
 </Window>
